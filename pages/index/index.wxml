@@ -1,0 +1,39 @@
+<view class="container">
+    <!-- 轮播图 -->
+    <swiper class="banners" autoplay="true" interval="3000" indicator-dots indicator-color="white"
+            indicator-active-color="gray">
+        <swiper-item>
+            <image src="/static/images/eg.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="/static/images/eg.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="/static/images/eg.jpg"></image>
+        </swiper-item>
+    </swiper>
+    <!-- 分类图标 -->
+    <view class="navContainer">
+        <view class="navItem">
+            <text class="iconfont icon-icon"></text>
+            <text>网站设计</text>
+        </view>
+        <view class="navItem">
+            <text class="iconfont icon-shejishi1"></text>
+            <text>名片设计</text>
+        </view>
+        <view class="navItem">
+            <text class="iconfont icon-icon4"></text>
+            <text>logo设计</text>
+        </view>
+        <view class="navItem">
+            <text class="iconfont icon-sheji"></text>
+            <text>彩页设计</text>
+        </view>
+        <view class="navItem">
+            <text class="iconfont icon-shejiyukaifa-"></text>
+            <text>手册设计</text>
+        </view>
+    </view>
+</view>
+
