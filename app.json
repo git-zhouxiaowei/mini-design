@@ -1,13 +1,40 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/about/about",
+    "pages/case/case"
   ],
   "window": {
     "navigationBarBackgroundColor": "#fff000",
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "设计简介",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "XXX元素",
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/static/images/home-undo.png",
+        "selectedIconPath": "/static/images/home-do.png"
+      },
+      {
+        "pagePath": "pages/case/case",
+        "text": "案例",
+        "iconPath": "/static/images/case-undo.png",
+        "selectedIconPath": "/static/images/case-do.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于我们",
+        "iconPath": "/static/images/about-undo.png",
+        "selectedIconPath": "/static/images/about-do.png"
+      }
+    ],
+    "color": "#707070",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#fff"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
