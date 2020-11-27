@@ -1,2 +1,4 @@
-<!--pages/case/case.wxml-->
-<text>pages/case/case.wxml</text>
+<rich-text nodes="<p class=\"ql-indent-6\"><strong class=\"ql-size-huge\" style=\"color: rgb(0, 97, 0); background-color: rgb(240, 102, 102);\"><em>标题内容</em></strong></p><p class=\"ql-indent-4\"><img src=\"http://yn365beta.enuoyun.com/answer-sharing/profile/upload/2020/11/27/a51cefdd41df1e3b6b47008f70031b62.jpg\"></p><p class=\"ql-align-center\"><br></p><p class=\"ql-align-center\"><br></p><h4><u>标志标志标</u>志标志标</h4><p><br></p><p><s>换行了志标</s>志标志标志</p><p><br></p><p></p>">
+</rich-text>
+<button open-type="contact" bindcontact="handleContact">联系客服</button>
+
