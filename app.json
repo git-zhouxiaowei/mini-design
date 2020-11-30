@@ -5,7 +5,7 @@
     "pages/case/case"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#fff000",
+    "navigationBarBackgroundColor": "#C30d23",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "XXX元素",
     "backgroundColor": "#eeeeee",
@@ -17,23 +17,23 @@
         "pagePath": "pages/index/index",
         "text": "主页",
         "iconPath": "/static/images/home-undo.png",
-        "selectedIconPath": "/static/images/home-do.png"
+        "selectedIconPath": "/static/images/home-red-do.png"
       },
       {
         "pagePath": "pages/case/case",
         "text": "案例",
         "iconPath": "/static/images/case-undo.png",
-        "selectedIconPath": "/static/images/case-do.png"
+        "selectedIconPath": "/static/images/case-red-do.png"
       },
       {
         "pagePath": "pages/about/about",
         "text": "关于我们",
         "iconPath": "/static/images/about-undo.png",
-        "selectedIconPath": "/static/images/about-do.png"
+        "selectedIconPath": "/static/images/about-red-do.png"
       }
     ],
-    "color": "#707070",
-    "selectedColor": "#1296db",
+    "color": "#333333",
+    "selectedColor": "#c43c33",
     "backgroundColor": "#fff"
   },
   "style": "v2",

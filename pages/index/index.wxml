@@ -3,37 +3,70 @@
     <swiper class="banners" autoplay="true" interval="3000" indicator-dots indicator-color="white"
             indicator-active-color="gray">
         <swiper-item>
-            <image src="/static/images/eg.jpg"></image>
+            <image src="/static/images/banner/2.jpg"></image>
         </swiper-item>
         <swiper-item>
-            <image src="/static/images/eg.jpg"></image>
+            <image src="/static/images/banner/3.jpg"></image>
         </swiper-item>
         <swiper-item>
-            <image src="/static/images/eg.jpg"></image>
+            <image src="/static/images/banner/4.jpg"></image>
         </swiper-item>
     </swiper>
     <!-- 分类图标 -->
     <view class="navContainer">
         <view class="navItem">
             <text class="iconfont icon-icon"></text>
-            <text>网站设计</text>
+            <text>品牌命名</text>
         </view>
         <view class="navItem">
             <text class="iconfont icon-shejishi1"></text>
-            <text>名片设计</text>
+            <text>标志VI</text>
         </view>
         <view class="navItem">
             <text class="iconfont icon-icon4"></text>
-            <text>logo设计</text>
+            <text>包装系统</text>
         </view>
         <view class="navItem">
             <text class="iconfont icon-sheji"></text>
-            <text>彩页设计</text>
+            <text>宣传画册</text>
         </view>
         <view class="navItem">
             <text class="iconfont icon-shejiyukaifa-"></text>
-            <text>手册设计</text>
+            <text>网站建设</text>
         </view>
+    </view>
+    <!-- 通知公告 -->
+    <view class="noticeContainer">
+        <view class="header">
+            <text>最新设计</text>
+            <text class="more">查看更多</text>
+        </view>
+        <scroll-view class="recommendScroll" enable-flex scroll-x>
+            <view class="scrollItem">
+                <image src="/static/images/t1.jpg"></image>
+                <text>设计图1设计图1设计图1设计图1</text>
+            </view>
+            <view class="scrollItem">
+                <image src="/static/images/t2.jpg"></image>
+                <text>设计图22222222222</text>
+            </view>
+            <view class="scrollItem">
+                <image src="/static/images/t3.jpg"></image>
+                <text>设计图3333333333333</text>
+            </view>
+            <view class="scrollItem">
+                <image src="/static/images/t4.jpg"></image>
+                <text>设计图4444444444444</text>
+            </view>
+            <view class="scrollItem">
+                <image src="/static/images/t5.jpg"></image>
+                <text>设计图5555555555555555</text>
+            </view>
+            <view class="scrollItem">
+                <image src="/static/images/t1.jpg"></image>
+                <text>设计图666666666666666666666</text>
+            </view>
+        </scroll-view>
     </view>
 </view>
 

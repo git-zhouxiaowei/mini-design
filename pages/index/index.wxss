@@ -1,33 +1,93 @@
- .banners{
-   height: 300rpx;
-   width: 100%;
- }
- .banners image{
-   height: 100%;
-   width: 100%;
- }
-
-.navContainer{
-  display:flex;
-}
-.navItem{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 20%;
+.container {
+    background-color: #d7d7d7;
+    height: 100%;
 }
 
- .navItem .iconfont{
+.banners {
+    height: 300rpx;
+    width: 100%;
+    border-radius: 16rpx;
+}
+
+.banners image {
+    height: 100%;
+    width: 100%;
+    border-radius: 16rpx;
+}
+
+.navContainer {
+    display: flex;
+    background-color: white;
+    border-radius: 16rpx;
+    margin: 10rpx 10rpx;
+    padding-bottom: 20rpx;
+}
+
+.navItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.navItem .iconfont {
     width: 100rpx;
     height: 100rpx;
     border-radius: 50%;
     text-align: center;
     line-height: 100rpx;
-    background-color: cornflowerblue;
+    background-color: #d43c33;
     font-size: 50rpx;
     color: #fff;
     margin: 20rpx 0;
 }
-.navItem text{
+
+.navItem text {
     font-size: 26rpx;
 }
+
+
+/* 最新设计 */
+.noticeContainer{
+    padding: 20rpx;
+    margin: 10rpx 10rpx;
+    background-color: white;
+    border-radius: 16rpx;
+}
+.noticeContainer .header{
+    font-size: 32rpx;
+    color: #666;
+    margin-bottom: 20rpx;
+}
+.noticeContainer .header .more{
+    float: right;
+    border: 1rpx solid #333;
+    padding: 10rpx 20rpx;
+    font-size: 24rpx;
+    border-radius: 30rpx;
+}
+/*内容区*/
+.recommendScroll{
+    display: flex;
+}
+.scrollItem{
+    width: 200rpx;
+    margin-right: 20rpx;
+
+}
+.scrollItem image{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 10rpx;
+    border: 2rpx solid #333;
+}
+.scrollItem text{
+    font-size: 26rpx;
+    display: block;
+    /*单行文本溢出三件套*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
