@@ -69,6 +69,7 @@
 /*内容区*/
 .recommendScroll{
     display: flex;
+    height: 300rpx;
 }
 .scrollItem{
     width: 200rpx;
@@ -90,4 +91,26 @@
     text-overflow: ellipsis;
 
 }
+/* 新闻通知 */
+.newsContainer{
+    padding: 20rpx;
+    margin: 10rpx 10rpx;
+    background-color: white;
+    border-radius: 16rpx;
+}
+.newsContainer .news{
+    display: flex;
+}
+.newsContainer .newsTime{
+    display: block;
+    float: right;
+}
+.newsContainer .newsTitle{
+    /*单行文本溢出三件套*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 450rpx;
+}
+
 

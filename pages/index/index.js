@@ -12,16 +12,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      wx.request({
-        url: 'https://www.baidu.com/s',
-        data:{wd:'Java'},
-        success:(res)=>{
-            console.log(res);
-        },
-        fail:(err)=>{
-          console.log(err);
-        }
-      })
+      // wx.request({
+      //   url: 'https://www.baidu.com/s',
+      //   data:{wd:'Java'},
+      //   success:(res)=>{
+      //       console.log(res);
+      //   },
+      //   fail:(err)=>{
+      //     console.log(err);
+      //   }
+      // })
   },
 
   /**

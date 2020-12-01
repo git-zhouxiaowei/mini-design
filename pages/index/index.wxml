@@ -37,10 +37,7 @@
     </view>
     <!-- 通知公告 -->
     <view class="noticeContainer">
-        <view class="header">
-            <text>最新设计</text>
-            <text class="more">查看更多</text>
-        </view>
+        <navHeader title="最新设计"></navHeader>
         <scroll-view class="recommendScroll" enable-flex scroll-x>
             <view class="scrollItem">
                 <image src="/static/images/t1.jpg"></image>
@@ -67,6 +64,22 @@
                 <text>设计图666666666666666666666</text>
             </view>
         </scroll-view>
+    </view>
+    <!--  新闻通知  -->
+    <view class="newsContainer">
+        <navHeader title="新闻通知"></navHeader>
+        <view class="news">
+            <text class="newsTitle">十四届五中全会表示，要全面实现现代化主义强国</text>
+            <text class="newsTime">2020-11-30</text>
+        </view>
+        <view class="news">
+            <text class="newsTitle">十四届五中全会表示，要全面实现现代化主义强国</text>
+            <text class="newsTime">2020-11-30</text>
+        </view>
+        <view class="news">
+            <text class="newsTitle">十四届五中全会表示，要全面实现现代化主义强国</text>
+            <text class="newsTime">2020-11-30</text>
+        </view>
     </view>
 </view>
 
