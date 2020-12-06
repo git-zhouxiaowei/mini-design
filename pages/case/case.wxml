@@ -1,4 +1,55 @@
-<rich-text nodes="<p class=\"ql-indent-6\"><strong class=\"ql-size-huge\" style=\"color: rgb(0, 97, 0); background-color: rgb(240, 102, 102);\"><em>标题内容</em></strong></p><p class=\"ql-indent-4\"><img src=\"http://yn365beta.enuoyun.com/answer-sharing/profile/upload/2020/11/27/a51cefdd41df1e3b6b47008f70031b62.jpg\"></p><p class=\"ql-align-center\"><br></p><p class=\"ql-align-center\"><br></p><h4><u>标志标志标</u>志标志标</h4><p><br></p><p><s>换行了志标</s>志标志标志</p><p><br></p><p></p>">
-</rich-text>
-<button open-type="contact" bindcontact="handleContact">联系客服</button>
-
+<!-- 富文本显示
+<rich-text nodes="">
+</rich-text>-->
+<view class="container">
+    <view class="moduleType">
+        <text class="title">品牌命名</text>
+        <view class="imageList">
+            <image src="/static/images/t5.jpg" class="imageItem"></image>
+            <image src="/static/images/t4.jpg" class="imageItem"></image>
+            <image src="/static/images/t3.jpg" class="imageItem"></image>
+            <image src="/static/images/t2.jpg" class="imageItem"></image>
+            <image src="/static/images/t1.jpg" class="imageItem"></image>
+            <image src="/static/images/t3.jpg" class="imageItem"></image>
+            <image src="/static/images/t5.jpg" class="imageItem"></image>
+            <image src="/static/images/t1.jpg" class="imageItem"></image>
+            <image src="/static/images/t2.jpg" class="imageItem"></image>
+            <image src="/static/images/t4.jpg" class="imageItem"></image>
+        </view>
+        <view class="next-page">
+            <text>更多</text>
+            <image src="/static/images/next.png"></image>
+        </view>
+    </view>
+    <view class="moduleType">
+        <text type="text" class="title" >标志VI</text>
+        <view class="imageBig">
+            <image src="/static/images/banner/3.jpg"></image>
+        </view>
+    </view>
+    <view class="moduleType">
+        <text class="title" >包装系统</text>
+        <view class="imageList">
+            <image src="/static/images/t5.jpg" class="imageItem"></image>
+            <image src="/static/images/t4.jpg" class="imageItem"></image>
+            <image src="/static/images/t3.jpg" class="imageItem"></image>
+            <image src="/static/images/t2.jpg" class="imageItem"></image>
+            <image src="/static/images/t1.jpg" class="imageItem"></image>
+            <image src="/static/images/t3.jpg" class="imageItem"></image>
+            <image src="/static/images/t5.jpg" class="imageItem"></image>
+            <image src="/static/images/t1.jpg" class="imageItem"></image>
+            <image src="/static/images/t2.jpg" class="imageItem"></image>
+            <image src="/static/images/t4.jpg" class="imageItem"></image>
+        </view>
+        <view class="next-page">
+            <text>更多</text>
+            <image src="/static/images/next.png"></image>
+        </view>
+    </view>
+    <view class="moduleType">
+        <text class="title" >宣传画册</text>
+        <view class="imageBig">
+            <image src="/static/images/banner/3.jpg"></image>
+        </view>
+    </view>
+</view>
