@@ -22,15 +22,16 @@
     color: #1296db;
     border: 1rpx solid #e8edff;
     border-radius: 16rpx;
-    text-align: center;
+    /*文本和图片居中*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*更多-文字*/
 .moduleType .next-page text{
     height: 40rpx;
     line-height: 40rpx;
     font-size: 30rpx;
-    position: relative;
-    bottom: 8rpx;
 }
 /*更多-图片*/
 .moduleType .next-page image{
