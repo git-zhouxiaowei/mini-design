@@ -80,6 +80,10 @@
             <text class="newsTitle">关于设计的一些小技巧，你知道吗</text>
             <text class="newsTime">2020-10-30</text>
         </view>
+        <view class="news">
+            <text class="newsTitle">设计方案的选定，创新力的发掘</text>
+            <text class="newsTime">2020-10-29</text>
+        </view>
     </view>
 </view>
 
