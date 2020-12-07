@@ -31,7 +31,7 @@
     </view>
     <!-- 最新设计 -->
     <view class="noticeContainer">
-        <navHeader title="最新设计"></navHeader>
+        <navHeader title="最新设计" catchtap="toMoreDesign"></navHeader>
         <scroll-view class="recommendScroll" enable-flex scroll-x>
             <view class="scrollItem" wx:for="{{designList}}">
                 <image src="{{item.designImg}}"></image>
@@ -41,7 +41,7 @@
     </view>
     <!--  新闻通知  -->
     <view class="newsContainer">
-        <navHeader title="新闻通知"></navHeader>
+        <navHeader title="新闻通知" catchtap="toMoreNews"></navHeader>
         <view class="news" wx:for="{{newsList}}">
             <text class="newsTitle">{{item.title}}</text>
             <text class="newsTime">{{item.date}}</text>

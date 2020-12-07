@@ -9,6 +9,19 @@ Page({
         newsList: []
     },
 
+    toMoreDesign: function (e) {
+        console.log(e);
+        wx.navigateTo({
+            url: '/pages/newDesign/newDesign'
+        })
+    },
+
+    toMoreNews: function (e) {
+        console.log(e);
+        wx.navigateTo({
+            url: '/pages/news/news'
+        })
+    },
     /**
      * 生命周期函数--监听页面加载
      */
@@ -29,54 +42,54 @@ Page({
                 {bannerImg: '/static/images/banner/3.jpg'},
                 {bannerImg: '/static/images/banner/4.jpg'}
             ],
-          designList:[
-            {
-              designImg: '/static/images/t1.jpg',
-              designName: 'T1'
-            },{
-              designImg: '/static/images/t2.jpg',
-              designName: 'T2'
-            },{
-              designImg: '/static/images/t3.jpg',
-              designName: 'T3'
-            },{
-              designImg: '/static/images/t4.jpg',
-              designName: 'T4'
-            },{
-              designImg: '/static/images/t5.jpg',
-              designName: 'T5'
-            },{
-              designImg: '/static/images/t1.jpg',
-              designName: 'T1'
-            },{
-              designImg: '/static/images/t2.jpg',
-              designName: 'T2'
-            },{
-              designImg: '/static/images/t3.jpg',
-              designName: 'T3'
-            },{
-              designImg: '/static/images/t4.jpg',
-              designName: 'T4'
-            },{
-              designImg: '/static/images/t5.jpg',
-              designName: 'T5'
-            }
-          ],
-          newsList:[
-            {
-              title:'十四届五中全会表示，要全面实现现代化主义强国',
-              date:'2020-12-07'
-            },{
-              title:'世界设计大会于浙江杭州举行，届时会有各方设计人员汇聚',
-              date:'2020-12-01'
-            },{
-              title:'关于设计的一些小技巧，你知道吗,设计方案的选定，创新力的发掘',
-              date:'2020-11-17'
-            },{
-              title:'网页设计方案的选定，创新力的发掘',
-              date:'2020-11-10'
-            }
-          ]
+            designList: [
+                {
+                    designImg: '/static/images/t1.jpg',
+                    designName: 'T1'
+                }, {
+                    designImg: '/static/images/t2.jpg',
+                    designName: 'T2'
+                }, {
+                    designImg: '/static/images/t3.jpg',
+                    designName: 'T3'
+                }, {
+                    designImg: '/static/images/t4.jpg',
+                    designName: 'T4'
+                }, {
+                    designImg: '/static/images/t5.jpg',
+                    designName: 'T5'
+                }, {
+                    designImg: '/static/images/t1.jpg',
+                    designName: 'T1'
+                }, {
+                    designImg: '/static/images/t2.jpg',
+                    designName: 'T2'
+                }, {
+                    designImg: '/static/images/t3.jpg',
+                    designName: 'T3'
+                }, {
+                    designImg: '/static/images/t4.jpg',
+                    designName: 'T4'
+                }, {
+                    designImg: '/static/images/t5.jpg',
+                    designName: 'T5'
+                }
+            ],
+            newsList: [
+                {
+                    title: '十四届五中全会表示，要全面实现现代化主义强国',
+                    date: '2020-12-07'
+                }, {
+                    title: '世界设计大会于浙江杭州举行，届时会有各方设计人员汇聚',
+                    date: '2020-12-01'
+                }, {
+                    title: '关于设计的一些小技巧，你知道吗,设计方案的选定，创新力的发掘',
+                    date: '2020-11-17'
+                }, {
+                    title: '网页设计方案的选定，创新力的发掘',
+                    date: '2020-11-10'
+                }
+            ]
         });
     },
 
