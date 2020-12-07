@@ -2,14 +2,8 @@
     <!-- 轮播图 -->
     <swiper class="banners" autoplay="true" interval="3000" indicator-dots indicator-color="white"
             indicator-active-color="gray">
-        <swiper-item>
-            <image src="/static/images/banner/2.jpg"></image>
-        </swiper-item>
-        <swiper-item>
-            <image src="/static/images/banner/3.jpg"></image>
-        </swiper-item>
-        <swiper-item>
-            <image src="/static/images/banner/4.jpg"></image>
+        <swiper-item wx:for="{{bannerList}}">
+            <image src="{{item.bannerImg}}"></image>
         </swiper-item>
     </swiper>
     <!-- 分类图标 -->
@@ -35,54 +29,22 @@
             <text>网站建设</text>
         </view>
     </view>
-    <!-- 通知公告 -->
+    <!-- 最新设计 -->
     <view class="noticeContainer">
         <navHeader title="最新设计"></navHeader>
         <scroll-view class="recommendScroll" enable-flex scroll-x>
-            <view class="scrollItem">
-                <image src="/static/images/t1.jpg"></image>
-                <text>设计图1设计图1设计图1设计图1</text>
-            </view>
-            <view class="scrollItem">
-                <image src="/static/images/t2.jpg"></image>
-                <text>设计图22222222222</text>
-            </view>
-            <view class="scrollItem">
-                <image src="/static/images/t3.jpg"></image>
-                <text>设计图3333333333333</text>
-            </view>
-            <view class="scrollItem">
-                <image src="/static/images/t4.jpg"></image>
-                <text>设计图4444444444444</text>
-            </view>
-            <view class="scrollItem">
-                <image src="/static/images/t5.jpg"></image>
-                <text>设计图5555555555555555</text>
-            </view>
-            <view class="scrollItem">
-                <image src="/static/images/t1.jpg"></image>
-                <text>设计图666666666666666666666</text>
+            <view class="scrollItem" wx:for="{{designList}}">
+                <image src="{{item.designImg}}"></image>
+                <text>{{item.designName}}</text>
             </view>
         </scroll-view>
     </view>
     <!--  新闻通知  -->
     <view class="newsContainer">
         <navHeader title="新闻通知"></navHeader>
-        <view class="news">
-            <text class="newsTitle">十四届五中全会表示，要全面实现现代化主义强国</text>
-            <text class="newsTime">2020-11-30</text>
-        </view>
-        <view class="news">
-            <text class="newsTitle">世界设计大会于浙江杭州举行，届时会有各方设计人员汇聚</text>
-            <text class="newsTime">2020-11-04</text>
-        </view>
-        <view class="news">
-            <text class="newsTitle">关于设计的一些小技巧，你知道吗</text>
-            <text class="newsTime">2020-10-30</text>
-        </view>
-        <view class="news">
-            <text class="newsTitle">设计方案的选定，创新力的发掘</text>
-            <text class="newsTime">2020-10-29</text>
+        <view class="news" wx:for="{{newsList}}">
+            <text class="newsTitle">{{item.title}}</text>
+            <text class="newsTime">{{item.date}}</text>
         </view>
     </view>
 </view>
