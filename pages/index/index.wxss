@@ -2,7 +2,7 @@
     background-color: #d7d7d7;
     height: 100%;
 }
-
+/*轮播图*/
 .banners {
     height: 300rpx;
     width: 100%;
@@ -14,7 +14,7 @@
     width: 100%;
     border-radius: 16rpx;
 }
-
+/*分类菜单*/
 .navContainer {
     display: flex;
     background-color: white;
@@ -47,7 +47,7 @@
 }
 
 
-/* 最新设计 */
+/* 最新设计，滑动 */
 .noticeContainer{
     padding: 20rpx;
     margin: 10rpx 10rpx;
@@ -66,7 +66,7 @@
     font-size: 24rpx;
     border-radius: 30rpx;
 }
-/*内容区*/
+/*设计内容区*/
 .recommendScroll{
     display: flex;
     height: 300rpx;
