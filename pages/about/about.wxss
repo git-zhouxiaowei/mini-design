@@ -1,6 +1,16 @@
 .container {
     height: 100%;
 }
+/*地图*/
+.container .mapView{
+    display: flex;
+    justify-content: center;
+}
+.container .mapView map{
+    height: 300rpx;
+    width: 95%;
+    margin-bottom: 20rpx;
+}
 /*关于我们模块*/
 .container .about{
     background-color: gray;
