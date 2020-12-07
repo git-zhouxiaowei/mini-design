@@ -1,1 +1,38 @@
-/* pages/about/about.wxss */
+.container {
+    height: 100%;
+}
+/*关于我们模块*/
+.container .about{
+    background-color: gray;
+    border-radius: 16rpx;
+    margin: 2rpx;
+}
+/*关于-文本*/
+.container .about text{
+    font-size: 26rpx;
+    color: white;
+    display: block;
+    margin: 2rpx 10rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+}
+/*关于-企业名称*/
+.container .about .companyName{
+    font-weight: bold;
+}
+
+/*联系客服*/
+.container button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rpx;
+    color: #409eff;
+    background-color: #ecf5ff;
+    border: 1rpx solid #b3d8ff;
+    border-radius: 16rpx;
+}
+.container button image{
+    width: 40rpx;
+    height: 40rpx;
+}

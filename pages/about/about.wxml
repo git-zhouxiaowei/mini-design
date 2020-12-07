@@ -1,1 +1,15 @@
-<button open-type="contact" bindcontact="handleContact">联系客服</button>
+<!-- 富文本显示-->
+<view class="container">
+    <view class="introduction">
+        <rich-text nodes="{{introduction}}">
+        </rich-text>
+    </view>
+    <view class="about">
+        <text class="companyName">河北广告设计有限公司</text>
+        <text>地址：石家庄市长江大道168号天山银河广场B区1单元307室</text>
+        <text>电话：0311-85115636　15313999953</text>
+        <text>邮箱：dadechina@126.com</text>
+    </view>
+    <button open-type="contact" bindcontact="handleContact">联系客服<image src="/static/images/server.png"></image></button>
+</view>
+
