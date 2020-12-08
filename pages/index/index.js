@@ -4,22 +4,32 @@ Page({
      * 页面的初始数据
      */
     data: {
-        bannerList: [],
-        designList: [],
-        newsList: []
     },
-
-    toMoreDesign: function (e) {
-        console.log(e);
+    /**
+     * 跳转相应的更多页面
+     */
+    toMore: function (e) {
+        let caseType = e.currentTarget.dataset.case;
+        console.log(caseType);
+        let url = '';
+        if ('NEWS' == caseType) {
+            url = '/pages/news/news'
+        } else if ('DESIGN' == caseType) {
+            url = '/pages/newDesign/newDesign'
+        }
         wx.navigateTo({
-            url: '/pages/newDesign/newDesign'
+            url: url
         })
     },
-
-    toMoreNews: function (e) {
-        console.log(e);
+    /**
+     * 跳转新闻详情页面
+     */
+    toNewsDetail: function (e) {
+        // ！切记 dataset里面都是英文小写
+        let newsId = e.currentTarget.dataset.newsid;
+        console.log(newsId);
         wx.navigateTo({
-            url: '/pages/news/news'
+            url: '/pages/newsDetail/newsDetail?newsId=' + newsId
         })
     },
     /**
@@ -77,15 +87,19 @@ Page({
             ],
             newsList: [
                 {
+                    id: 1,
                     title: '十四届五中全会表示，要全面实现现代化主义强国',
                     date: '2020-12-07'
                 }, {
+                    id: 2,
                     title: '世界设计大会于浙江杭州举行，届时会有各方设计人员汇聚',
                     date: '2020-12-01'
                 }, {
+                    id: 3,
                     title: '关于设计的一些小技巧，你知道吗,设计方案的选定，创新力的发掘',
                     date: '2020-11-17'
                 }, {
+                    id: 4,
                     title: '网页设计方案的选定，创新力的发掘',
                     date: '2020-11-10'
                 }

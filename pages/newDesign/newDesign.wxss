@@ -1,0 +1,44 @@
+.moduleType{
+    padding: 2rpx;
+    margin: 2rpx 0;
+}
+/*类别标题*/
+.moduleType .title{
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 40rpx;
+    font-weight: bold;
+    color: darkred;
+    margin-left: 10rpx;
+}
+/*更多*/
+.moduleType .next-page{
+    height: 40rpx;
+    line-height: 40rpx;
+    color: #1296db;
+    border: 1rpx solid #e8edff;
+    border-radius: 16rpx;
+    /*文本和图片居中*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*更多-文字*/
+.moduleType .next-page text{
+    height: 40rpx;
+    line-height: 40rpx;
+    font-size: 30rpx;
+}
+/*更多-图片*/
+.moduleType .next-page image{
+    width: 40rpx;
+    height: 40rpx;
+}
+/*图片类案例列表图*/
+.moduleType .imageList image{
+    width: 365rpx;
+    height: 220rpx;
+    margin: 2rpx;
+    border-radius: 16rpx;
+    border: 1rpx solid #d3d3d3;
+}

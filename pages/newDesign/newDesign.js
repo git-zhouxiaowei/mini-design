@@ -1,10 +1,11 @@
-// pages/case/case.js
+// pages/newDesign/newDesign.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+
   },
 
   /**

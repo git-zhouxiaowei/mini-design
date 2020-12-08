@@ -4,7 +4,6 @@ Page({
      * 页面的初始数据
      */
     data: {
-        introduction: '',
         longitude: 114.63231325,
         latitude: 38.03733484,
         markers: [
