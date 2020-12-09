@@ -1,11 +1,11 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/newsDetail/newsDetail",
     "pages/case/case",
     "pages/news/news",
     "pages/about/about",
-    "pages/newDesign/newDesign",
-    "pages/newsDetail/newsDetail"
+    "pages/newDesign/newDesign"
   ],
   "window": {
     "navigationBarBackgroundColor": "#C30d23",

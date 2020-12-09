@@ -10,7 +10,6 @@ Page({
      */
     toMore: function (e) {
         let caseType = e.currentTarget.dataset.case;
-        console.log(caseType);
         let url = '';
         if ('NEWS' == caseType) {
             url = '/pages/news/news'
@@ -27,7 +26,6 @@ Page({
     toNewsDetail: function (e) {
         // ！切记 dataset里面都是英文小写
         let newsId = e.currentTarget.dataset.newsid;
-        console.log(newsId);
         wx.navigateTo({
             url: '/pages/newsDetail/newsDetail?newsId=' + newsId
         })

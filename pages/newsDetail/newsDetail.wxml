@@ -1,18 +1,11 @@
 <view class="container">
     <!--  标题  -->
-    <view class="titleContainer">
-        <text class="title">{{news.title}}</text>
+    <view class="title">
+        {{news.title}}
     </view>
-    <!--  摘要  -->
-    <view class="summaryContainer">
-        <text class="summary">{{news.summary}}</text>
-    </view>
-    <!--  发布时间  -->
+    <!--  发布时间 浏览次数  -->
     <view class="timeContainer">
         <text class="publishTime">发布日期：{{news.publishTime}}</text>
-    </view>
-    <!--  浏览次数  -->
-    <view class="scanContainer">
         <text class="scanTimes">浏览次数：{{news.scanTimes}}</text>
     </view>
     <!-- 富文本显示-->

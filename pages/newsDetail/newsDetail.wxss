@@ -1,1 +1,19 @@
-/* pages/newsDetail/newsDetail.wxss */
+.container {
+    margin: 2 rpx;
+}
+
+.container .title {
+    margin: 10rpx 40rpx;
+    font-weight: bold;
+    text-align: center;
+}
+
+.timeContainer {
+    font-size: 24rpx;
+    color: gray;
+    text-align: center;
+}
+
+.timeContainer text{
+    margin: 0 20rpx;
+}
