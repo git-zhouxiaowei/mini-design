@@ -42,8 +42,8 @@
     <!--  新闻通知  -->
     <view class="newsContainer">
         <navHeader title="新闻通知" data-case="NEWS" catchtap="toMore"></navHeader>
-        <view class="news" wx:for="{{newsList}}">
-            <text class="newsTitle" data-newsId="{{item.id}}" catchtap="toNewsDetail">{{item.title}}</text>
+        <view class="news" data-newsId="{{item.id}}" catchtap="toNewsDetail" wx:for="{{newsList}}">
+            <text class="newsTitle">{{item.title}}</text>
             <text class="newsTime">{{item.date}}</text>
         </view>
     </view>

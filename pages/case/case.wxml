@@ -1,52 +1,18 @@
 <view class="container">
-    <view class="moduleType">
-        <text class="title">品牌命名</text>
-        <view class="imageList">
-            <image src="/static/images/t5.jpg" class="imageItem"></image>
-            <image src="/static/images/t4.jpg" class="imageItem"></image>
-            <image src="/static/images/t3.jpg" class="imageItem"></image>
-            <image src="/static/images/t2.jpg" class="imageItem"></image>
-            <image src="/static/images/t1.jpg" class="imageItem"></image>
-            <image src="/static/images/t3.jpg" class="imageItem"></image>
-            <image src="/static/images/t5.jpg" class="imageItem"></image>
-            <image src="/static/images/t1.jpg" class="imageItem"></image>
-            <image src="/static/images/t2.jpg" class="imageItem"></image>
-            <image src="/static/images/t4.jpg" class="imageItem"></image>
+    <view class="moduleType" wx:for-item="caseItem" wx:for="{{caseList}}">
+        <text class="title">{{caseItem.title}}</text>
+        <view wx:if="{{caseItem.caseType == 0}}">
+            <view class="imageList">
+                <image src="{{ig.imageUrl}}" data-designid="{{ig.id}}" data-casetype="{{caseItem.caseType}}" catchtap="toDesignDetail" wx:for-item="ig"
+                       wx:for="{{caseItem.designImageList}}" class="imageItem"></image>
+            </view>
+            <view class="next-page" wx:if="{{caseItem.haveFlag}}">
+                <text>更多</text>
+                <image src="/static/images/next.png"></image>
+            </view>
         </view>
-        <view class="next-page">
-            <text>更多</text>
-            <image src="/static/images/next.png"></image>
-        </view>
-    </view>
-    <view class="moduleType">
-        <text type="text" class="title" >标志VI</text>
-        <view class="imageBig">
-            <image src="/static/images/banner/3.jpg"></image>
-        </view>
-    </view>
-    <view class="moduleType">
-        <text class="title" >包装系统</text>
-        <view class="imageList">
-            <image src="/static/images/t5.jpg" class="imageItem"></image>
-            <image src="/static/images/t4.jpg" class="imageItem"></image>
-            <image src="/static/images/t3.jpg" class="imageItem"></image>
-            <image src="/static/images/t2.jpg" class="imageItem"></image>
-            <image src="/static/images/t1.jpg" class="imageItem"></image>
-            <image src="/static/images/t3.jpg" class="imageItem"></image>
-            <image src="/static/images/t5.jpg" class="imageItem"></image>
-            <image src="/static/images/t1.jpg" class="imageItem"></image>
-            <image src="/static/images/t2.jpg" class="imageItem"></image>
-            <image src="/static/images/t4.jpg" class="imageItem"></image>
-        </view>
-        <view class="next-page">
-            <text>更多</text>
-            <image src="/static/images/next.png"></image>
-        </view>
-    </view>
-    <view class="moduleType">
-        <text class="title" >宣传画册</text>
-        <view class="imageBig">
-            <image src="/static/images/banner/3.jpg"></image>
+        <view class="imageBig" data-caseitemid="{{caseItem.id}}" data-casetype="{{caseItem.caseType}}" catchtap="toDesignDetail" wx:else>
+            <image src="{{caseItem.designImage}}"></image>
         </view>
     </view>
 </view>
