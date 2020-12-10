@@ -33,7 +33,7 @@
     <view class="noticeContainer">
         <navHeader title="最新设计" data-case="DESIGN" catchtap="toMore"></navHeader>
         <scroll-view class="recommendScroll" enable-flex scroll-x>
-            <view class="scrollItem" wx:for="{{designList}}">
+            <view class="scrollItem" data-designid="{{item.id}}" catchtap="toDesignDetail" wx:for="{{designList}}">
                 <image src="{{item.designImg}}"></image>
                 <text>{{item.designName}}</text>
             </view>

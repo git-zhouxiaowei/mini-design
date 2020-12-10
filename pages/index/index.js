@@ -3,8 +3,7 @@ Page({
     /**
      * 页面的初始数据
      */
-    data: {
-    },
+    data: {},
     /**
      * 跳转相应的更多页面
      */
@@ -31,6 +30,16 @@ Page({
         })
     },
     /**
+     * 跳转设计详情页面
+     */
+    toDesignDetail: function (e) {
+        // ！切记 dataset里面都是英文小写
+        let designId = e.currentTarget.dataset.designid;
+        wx.navigateTo({
+            url: '/pages/designDetail/designDetail?designId=' + designId
+        })
+    },
+    /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
@@ -52,33 +61,43 @@ Page({
             ],
             designList: [
                 {
+                    id: 1,
                     designImg: '/static/images/t1.jpg',
                     designName: 'T1'
                 }, {
+                    id: 2,
                     designImg: '/static/images/t2.jpg',
                     designName: 'T2'
                 }, {
+                    id: 3,
                     designImg: '/static/images/t3.jpg',
                     designName: 'T3'
                 }, {
+                    id: 4,
                     designImg: '/static/images/t4.jpg',
                     designName: 'T4'
                 }, {
+                    id: 5,
                     designImg: '/static/images/t5.jpg',
                     designName: 'T5'
                 }, {
+                    id: 6,
                     designImg: '/static/images/t1.jpg',
                     designName: 'T1'
                 }, {
+                    id: 7,
                     designImg: '/static/images/t2.jpg',
                     designName: 'T2'
                 }, {
+                    id: 8,
                     designImg: '/static/images/t3.jpg',
                     designName: 'T3'
                 }, {
+                    id: 9,
                     designImg: '/static/images/t4.jpg',
                     designName: 'T4'
                 }, {
+                    id: 10,
                     designImg: '/static/images/t5.jpg',
                     designName: 'T5'
                 }
