@@ -2,7 +2,7 @@
     <!-- 轮播图 -->
     <swiper class="banners" autoplay="true" interval="3000" indicator-dots indicator-color="white"
             indicator-active-color="gray">
-        <swiper-item wx:for="{{bannerList}}">
+        <swiper-item wx:for="{{bannerInfoList}}">
             <image src="{{item.bannerImg}}"></image>
         </swiper-item>
     </swiper>
@@ -33,8 +33,8 @@
     <view class="noticeContainer">
         <navHeader title="最新设计" data-case="DESIGN" catchtap="toMore"></navHeader>
         <scroll-view class="recommendScroll" enable-flex scroll-x>
-            <view class="scrollItem" data-designid="{{item.id}}" catchtap="toDesignDetail" wx:for="{{designList}}">
-                <image src="{{item.designImg}}"></image>
+            <view class="scrollItem" data-designid="{{item.caseId}}" catchtap="toDesignDetail" wx:for="{{caseInfoList}}">
+                <image src="{{item.coverImg}}"></image>
                 <text>{{item.designName}}</text>
             </view>
         </scroll-view>
@@ -42,9 +42,9 @@
     <!--  新闻通知  -->
     <view class="newsContainer">
         <navHeader title="新闻通知" data-case="NEWS" catchtap="toMore"></navHeader>
-        <view class="news" data-newsId="{{item.id}}" catchtap="toNewsDetail" wx:for="{{newsList}}">
-            <text class="newsTitle">{{item.title}}</text>
-            <text class="newsTime">{{item.date}}</text>
+        <view class="news" data-newsId="{{item.noticeId}}" catchtap="toNewsDetail" wx:for="{{noticeList}}">
+            <text class="newsTitle">{{item.noticeTitle}}</text>
+            <text class="newsTime">{{item.createTime}}</text>
         </view>
     </view>
 </view>
