@@ -2,7 +2,7 @@
     <view class="moduleType">
         <text class="title">最新设计</text>
         <view class="imageList">
-            <image src="{{item.imageUrl}}" data-designid="{{item.id}}" catchtap="toDesignDetail" wx:for="{{caseItem.designImageList}}" class="imageItem"></image>
+            <image src="{{item.coverImg}}" data-designid="{{item.caseId}}" catchtap="toDesignDetail" wx:for="{{caseItem.caseInfoList}}" class="imageItem"></image>
         </view>
         <view class="next-page" wx:if="{{caseItem.haveFlag}}">
             <text>更多</text>

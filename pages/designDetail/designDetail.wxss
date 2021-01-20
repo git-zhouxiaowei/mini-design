@@ -19,8 +19,11 @@
 
 .timeContainer {
     font-size: 24rpx;
-    color: gray;
+    color: #656565;
     text-align: center;
+    height: 70rpx;
+    line-height: 70rpx;
+    background-color: #F6F6F6;
 }
 
 .timeContainer text{

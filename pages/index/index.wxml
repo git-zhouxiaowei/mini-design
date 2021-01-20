@@ -33,7 +33,7 @@
     <view class="noticeContainer">
         <navHeader title="最新设计" data-case="DESIGN" catchtap="toMore"></navHeader>
         <scroll-view class="recommendScroll" enable-flex scroll-x>
-            <view class="scrollItem" data-designid="{{item.caseId}}" catchtap="toDesignDetail" wx:for="{{caseInfoList}}">
+            <view class="scrollItem" data-caseId="{{item.caseId}}" catchtap="toDesignDetail" wx:for="{{caseInfoList}}">
                 <image src="{{item.coverImg}}"></image>
                 <text>{{item.designName}}</text>
             </view>
@@ -42,7 +42,7 @@
     <!--  新闻通知  -->
     <view class="newsContainer">
         <navHeader title="新闻通知" data-case="NEWS" catchtap="toMore"></navHeader>
-        <view class="news" data-newsId="{{item.noticeId}}" catchtap="toNewsDetail" wx:for="{{noticeList}}">
+        <view class="news" data-noticeId="{{item.noticeId}}" catchtap="toNewsDetail" wx:for="{{noticeList}}">
             <text class="newsTitle">{{item.noticeTitle}}</text>
             <text class="newsTime">{{item.createTime}}</text>
         </view>

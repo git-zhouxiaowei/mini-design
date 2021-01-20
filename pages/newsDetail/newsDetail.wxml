@@ -1,16 +1,16 @@
 <view class="container">
     <!--  标题  -->
     <view class="title">
-        {{news.title}}
+        {{notice.noticeTitle}}
     </view>
     <!--  发布时间 浏览次数  -->
     <view class="timeContainer">
-        <text class="publishTime">发布日期：{{news.publishTime}}</text>
-        <text class="scanTimes">浏览次数：{{news.scanTimes}}</text>
+        <text class="publishTime">发布日期：{{notice.publishTime}}</text>
+        <text class="scanTimes">浏览次数：{{notice.viewTimes}}</text>
     </view>
     <!-- 富文本显示-->
     <view class="detailContainer">
-        <rich-text nodes="{{news.detail}}">
+        <rich-text nodes="{{notice.detail}}">
         </rich-text>
     </view>
 </view>

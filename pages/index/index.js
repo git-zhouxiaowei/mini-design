@@ -25,9 +25,9 @@ Page({
      */
     toNewsDetail: function (e) {
         // ！切记 dataset里面都是英文小写
-        let newsId = e.currentTarget.dataset.newsid;
+        let noticeId = e.currentTarget.dataset.noticeid;
         wx.navigateTo({
-            url: '/pages/newsDetail/newsDetail?newsId=' + newsId
+            url: '/pages/newsDetail/newsDetail?noticeId=' + noticeId
         })
     },
     /**
@@ -35,9 +35,9 @@ Page({
      */
     toDesignDetail: function (e) {
         // ！切记 dataset里面都是英文小写
-        let designId = e.currentTarget.dataset.designid;
+        let caseId = e.currentTarget.dataset.caseid;
         wx.navigateTo({
-            url: '/pages/designDetail/designDetail?designId=' + designId
+            url: '/pages/designDetail/designDetail?caseId=' + caseId
         })
     },
     /**
@@ -46,7 +46,6 @@ Page({
     onLoad: function (options) {
         wx.request({
             url: 'http://localhost:8080/design/front/mini/initData',
-            data: {wd: 'Java'},
             success: (res) => {
                 console.log(res);
                 let respData = res.data;

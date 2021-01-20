@@ -5,9 +5,9 @@
     <!--  新闻通知  -->
     <view class="newsContainer">
         <text class="title">新闻通知</text>
-        <view class="news" wx:for="{{newsList}}">
-            <text class="newsTitle">{{item.title}}</text>
-            <text class="newsTime">{{item.date}}</text>
+        <view class="news" data-noticeId="{{item.noticeId}}" catchtap="toNewsDetail" wx:for="{{noticeList}}">
+            <text class="newsTitle">{{item.noticeTitle}}</text>
+            <text class="newsTime">{{item.createTime}}</text>
         </view>
         <view class="page">
             <button class="mini-btn" type="default" size="mini">上一页</button>

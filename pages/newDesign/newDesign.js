@@ -10,10 +10,10 @@ Page({
      */
     toDesignDetail: function (e) {
         // ！切记 dataset里面都是英文小写
-        let designId = e.currentTarget.dataset.designid;
+        let caseId = e.currentTarget.dataset.caseid;
         console.log(designId);
         wx.navigateTo({
-            url: '/pages/designDetail/designDetail?designId=' + designId
+            url: '/pages/designDetail/designDetail?caseId=' + caseId
         })
     },
 
@@ -21,48 +21,29 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        this.setData({
-            caseItem: {
-                id: 1,
-                title: '最新设计',
-                caseType: 0,
-                haveFlag: true,
-                designImageList: [
-                    {
-                        id: 1,
-                        imageUrl: '/static/images/t1.jpg'
-                    }, {
-                        id: 2,
-                        imageUrl: '/static/images/t2.jpg'
-                    }, {
-                        id: 3,
-                        imageUrl: '/static/images/t3.jpg'
-                    }, {
-                        id: 4,
-                        imageUrl: '/static/images/t4.jpg'
-                    }, {
-                        id: 5,
-                        imageUrl: '/static/images/t5.jpg'
-                    }, {
-                        id: 6,
-                        imageUrl: '/static/images/t1.jpg'
-                    }, {
-                        id: 7,
-                        imageUrl: '/static/images/t2.jpg'
-                    }, {
-                        id: 8,
-                        imageUrl: '/static/images/t3.jpg'
-                    }, {
-                        id: 9,
-                        imageUrl: '/static/images/t4.jpg'
-                    }, {
-                        id: 10,
-                        imageUrl: '/static/images/t5.jpg'
-                    }
-                ],
-                designImage: ''
+        wx.request({
+            url: 'http://localhost:8080/design/front/mini/newCaseInfoPage/1',
+            success: (res) => {
+                console.log(res);
+                let respData = res.data;
+                if (0 == respData.code) {
+                    this.setData({
+                        caseItem: {
+                            id: 1,
+                            title: '最新设计',
+                            caseType: 0,
+                            haveFlag: true,
+                            caseInfoList: respData.data,
+                            designImage: ''
+                        }
+                    });
+                }
+            },
+            fail: (err) => {
+                console.log(err);
             }
         });
+
     },
 
     /**
