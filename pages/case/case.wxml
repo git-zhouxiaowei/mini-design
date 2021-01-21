@@ -1,18 +1,23 @@
 <view class="container">
-    <view class="moduleType" wx:for-item="caseItem" wx:for="{{caseList}}">
-        <text class="title">{{caseItem.title}}</text>
-        <view wx:if="{{caseItem.caseType == 0}}">
+    <view class="moduleType" wx:for-item="menuItem" wx:for="{{menuList}}">
+        <text class="title">{{menuItem.caseMenuName}}</text>
+        <view wx:if="{{menuItem.caseType == 'imgs'}}">
             <view class="imageList">
-                <image src="{{ig.imageUrl}}" data-designid="{{ig.id}}" data-casetype="{{caseItem.caseType}}" catchtap="toDesignDetail" wx:for-item="ig"
-                       wx:for="{{caseItem.designImageList}}" class="imageItem"></image>
+                <image src="{{caseInfo.coverImg}}" data-caseid="{{caseInfo.caseId}}" catchtap="toDesignDetail"
+                       wx:for-item="caseInfo"
+                       wx:for="{{menuItem.caseList}}" class="imageItem"></image>
             </view>
-            <view class="next-page" wx:if="{{caseItem.haveFlag}}">
-                <text>更多</text>
+            <view class="next-page" wx:if="{{menuItem.haveFlag}}">
+                <text>查看更多</text>
                 <image src="/static/images/next.png"></image>
             </view>
         </view>
-        <view class="imageBig" data-caseitemid="{{caseItem.id}}" data-casetype="{{caseItem.caseType}}" catchtap="toDesignDetail" wx:else>
-            <image src="{{caseItem.designImage}}"></image>
+        <view class="imageBig" wx:else>
+            <view data-caseid="{{caseInfo.caseId}}" catchtap="toDesignDetail" wx:for-item="caseInfo"
+                  wx:for="{{menuItem.caseList}}">
+                <image src="{{caseInfo.coverImg}}" wx:if="{{'' != caseInfo.coverImg}}"></image>
+                <image src="/static/images/zanwu.jpg" wx:else></image>
+            </view>
         </view>
     </view>
 </view>
