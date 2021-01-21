@@ -21,6 +21,16 @@ Page({
         })
     },
     /**
+     * 跳转该案例菜单的图片列表页
+     */
+    toMoreCaseInfo: function (e) {
+        let caseMenuId = e.currentTarget.dataset.casemenuid;
+        let url = '/pages/newDesign/newDesign?caseMenuId=' + caseMenuId;
+        wx.navigateTo({
+            url: url
+        })
+    },
+    /**
      * 跳转新闻详情页面
      */
     toNewsDetail: function (e) {

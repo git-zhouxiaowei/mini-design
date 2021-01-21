@@ -8,23 +8,23 @@
     </swiper>
     <!-- 分类图标 -->
     <view class="navContainer">
-        <view class="navItem">
+        <view class="navItem" data-casemenuid="1" catchtap="toMoreCaseInfo">
             <text class="iconfont icon-icon"></text>
             <text>品牌命名</text>
         </view>
-        <view class="navItem">
+        <view class="navItem" data-casemenuid="2" catchtap="toMoreCaseInfo">
             <text class="iconfont icon-shejishi1"></text>
             <text>标志VI</text>
         </view>
-        <view class="navItem">
+        <view class="navItem" data-casemenuid="6" catchtap="toMoreCaseInfo">
             <text class="iconfont icon-icon4"></text>
             <text>包装系统</text>
         </view>
-        <view class="navItem">
+        <view class="navItem" data-casemenuid="11" catchtap="toMoreCaseInfo">
             <text class="iconfont icon-sheji"></text>
             <text>宣传画册</text>
         </view>
-        <view class="navItem">
+        <view class="navItem" data-casemenuid="7" catchtap="toMoreCaseInfo">
             <text class="iconfont icon-shejiyukaifa-"></text>
             <text>网站建设</text>
         </view>
