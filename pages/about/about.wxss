@@ -1,6 +1,15 @@
 .container {
     height: 100%;
 }
+/*类别标题*/
+.introduction .title{
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 40rpx;
+    font-weight: bold;
+    color: #444444;
+    margin-left: 10rpx;
+}
 /*地图*/
 .container .mapView{
     display: flex;

@@ -1,15 +1,16 @@
 <!-- 富文本显示-->
 <view class="container">
     <view class="introduction">
+        <text class="title">{{caseName}}</text>
         <rich-text nodes="{{introduction}}">
         </rich-text>
     </view>
     <!--  文本信息  -->
     <view class="about">
-        <text class="companyName">河北广告设计有限公司</text>
-        <text>地址：石家庄市长江大道168号天山银河广场B区1单元307室</text>
-        <text>电话：0311-85115636　15313999953</text>
-        <text>邮箱：dadechina@126.com</text>
+        <text class="companyName">{{aboutInfo.aboutName}}</text>
+        <text>地址：{{aboutInfo.address}}</text>
+        <text>电话：{{aboutInfo.telephone}}　{{aboutInfo.cellphone}}</text>
+        <text>邮箱：{{aboutInfo.email}}</text>
         <!--  地图  -->
         <view class="mapView">
             <map id="myMap" longitude="{{longitude}}"

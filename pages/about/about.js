@@ -1,3 +1,4 @@
+var formatRichText = require('../../utils/formatRichText')
 Page({
 
     /**
@@ -21,12 +22,27 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        //样例数据
-        let introduction = '<p><strong class="ql-size-huge" style="color: rgb(0, 0, 0);">一分钟了解</strong></p><p><img src="http://localhost:8080/profile/upload/2020/12/07/9fdaa2313d8a17345b951b7c07f21016.jpg"></p><p><img src="http://localhost:8080/profile/upload/2020/12/07/f5e1541d4138a653e6a10c7d615c9d04.jpg"></p><p><img src="http://localhost:8080/profile/upload/2020/12/07/3edf3dfa87aede510cc9b161d352d953.jpg"></p><p><img src="http://localhost:8080/profile/upload/2020/12/07/d09f874c2cf9049a2963d0a38c9eb409.jpg"></p><p><img src="http://localhost:8080/profile/upload/2020/12/07/6b6ab3ab50183b817dd8798418a780a9.jpg"></p><p><img src="http://localhost:8080/profile/upload/2020/12/07/8f75dfeec80f7340e7f1e54b2720f881.jpg"></p><p><img src="http://localhost:8080/profile/upload/2020/12/07/45accef495f681b508971ab42f69c237.jpg"></p><p><br></p>';
-        introduction = introduction.replace(/\<img/gi, '<img style="width:100%;height:auto;"').replace(/\<p>/gi, '<p class="p_class">');
-        this.setData({
-            introduction
-        })
+        wx.request({
+            url: 'http://localhost:8080/design/front/mini/aboutInfo',
+            success: (res) => {
+                let respData = res.data;
+                if (0 == respData.code) {
+                    let dataMap = respData.data;
+                    let caseInfo = dataMap.caseInfo;
+                    let aboutInfo = dataMap.aboutInfo;
+                    let introduction = formatRichText.formatRichText(caseInfo.caseText);
+                    this.setData({
+                        aboutInfo: aboutInfo,
+                        introduction: introduction,
+                        caseName: caseInfo.caseName
+                    });
+                }
+
+            },
+            fail: (err) => {
+                console.log(err);
+            }
+        });
     },
 
     /**
