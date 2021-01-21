@@ -12,28 +12,14 @@
     margin-left: 10rpx;
 }
 /*更多*/
-.moduleType .next-page{
+.moduleType .nothing{
     height: 40rpx;
     line-height: 40rpx;
-    color: #1296db;
-    border: 1rpx solid #e8edff;
-    border-radius: 16rpx;
-    /*文本和图片居中*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: gray;
+    text-align: center;
+    font-size: 24rpx;
 }
-/*更多-文字*/
-.moduleType .next-page text{
-    height: 40rpx;
-    line-height: 40rpx;
-    font-size: 30rpx;
-}
-/*更多-图片*/
-.moduleType .next-page image{
-    width: 40rpx;
-    height: 40rpx;
-}
+
 /*图片类案例列表图*/
 .moduleType .imageList image{
     width: 365rpx;

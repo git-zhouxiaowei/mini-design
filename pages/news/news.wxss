@@ -45,11 +45,11 @@
     display: block;
     float: right;
 }
-/*分页*/
-.newsContainer .page{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.nothing{
+    height: 40rpx;
+    line-height: 40rpx;
+    color: gray;
     text-align: center;
+    font-size: 24rpx;
 }
 

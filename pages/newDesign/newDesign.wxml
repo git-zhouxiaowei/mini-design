@@ -2,11 +2,12 @@
     <view class="moduleType">
         <text class="title">{{caseItem.caseMenuName}}</text>
         <view class="imageList">
-            <image src="{{item.coverImg}}" data-caseid="{{item.caseId}}" catchtap="toDesignDetail" wx:for="{{caseItem.caseInfoList}}" class="imageItem"></image>
+            <image src="{{item.coverImg}}" data-caseid="{{item.caseId}}" catchtap="toDesignDetail"
+                   wx:for="{{caseItem.caseInfoList}}" class="imageItem"></image>
         </view>
-        <view class="next-page" wx:if="{{caseItem.haveFlag}}">
-            <text>上划查看更多</text>
-            <image src="/static/images/next.png"></image>
+        <view class="nothing">
+            <text wx:if="{{caseItem.haveFlag}}">{{viewMore}}</text>
+            <text wx:else>{{nothing}}</text>
         </view>
     </view>
 </view>
