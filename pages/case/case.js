@@ -5,6 +5,16 @@ Page({
      */
     data: {},
     /**
+     * 跳转相应的更多页面
+     */
+    toMore: function (e) {
+        let caseMenuId = e.currentTarget.dataset.casemenuid;
+        let url = '/pages/newDesign/newDesign?caseMenuId=' + caseMenuId
+        wx.navigateTo({
+            url: url
+        })
+    },
+    /**
      * 跳转设计详情页面
      */
     toDesignDetail: function (e) {

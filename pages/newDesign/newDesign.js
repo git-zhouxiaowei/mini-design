@@ -11,18 +11,23 @@ Page({
     toDesignDetail: function (e) {
         // ！切记 dataset里面都是英文小写
         let caseId = e.currentTarget.dataset.caseid;
-        console.log(designId);
         wx.navigateTo({
             url: '/pages/designDetail/designDetail?caseId=' + caseId
         })
     },
-
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
+        let caseMenuId = options.caseMenuId;
+        let data = {};
+        if (undefined != caseMenuId && 'undefined' != caseMenuId) {
+            //如果没有案例菜单类型，默认显示所有案例图片列表
+            data = {caseMenuId: caseMenuId};
+        }
         wx.request({
             url: 'http://localhost:8080/design/front/mini/newCaseInfoPage/1',
+            data: data,
             success: (res) => {
                 console.log(res);
                 let respData = res.data;
@@ -43,7 +48,6 @@ Page({
                 console.log(err);
             }
         });
-
     },
 
     /**
