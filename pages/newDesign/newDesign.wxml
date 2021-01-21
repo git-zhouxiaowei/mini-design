@@ -1,11 +1,11 @@
 <view class="container">
     <view class="moduleType">
-        <text class="title">最新设计</text>
+        <text class="title">{{caseItem.caseMenuName}}</text>
         <view class="imageList">
             <image src="{{item.coverImg}}" data-caseid="{{item.caseId}}" catchtap="toDesignDetail" wx:for="{{caseItem.caseInfoList}}" class="imageItem"></image>
         </view>
         <view class="next-page" wx:if="{{caseItem.haveFlag}}">
-            <text>更多</text>
+            <text>上划查看更多</text>
             <image src="/static/images/next.png"></image>
         </view>
     </view>

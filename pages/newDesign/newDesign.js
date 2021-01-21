@@ -32,14 +32,13 @@ Page({
                 console.log(res);
                 let respData = res.data;
                 if (0 == respData.code) {
+                    let dataMap = respData.data;
                     this.setData({
                         caseItem: {
-                            id: 1,
-                            title: '最新设计',
-                            caseType: 0,
-                            haveFlag: true,
-                            caseInfoList: respData.data,
-                            designImage: ''
+                            caseMenuId: dataMap.caseMenuId,
+                            caseMenuName: dataMap.caseMenuName,
+                            haveFlag: dataMap.haveFlag,
+                            caseInfoList: dataMap.caseList
                         }
                     });
                 }

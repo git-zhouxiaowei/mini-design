@@ -9,7 +9,7 @@ Page({
      */
     toMore: function (e) {
         let caseMenuId = e.currentTarget.dataset.casemenuid;
-        let url = '/pages/newDesign/newDesign?caseMenuId=' + caseMenuId
+        let url = '/pages/newDesign/newDesign?caseMenuId=' + caseMenuId;
         wx.navigateTo({
             url: url
         })

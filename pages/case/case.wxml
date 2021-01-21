@@ -7,7 +7,7 @@
                        wx:for-item="caseInfo"
                        wx:for="{{menuItem.caseList}}" class="imageItem"></image>
             </view>
-            <view class="next-page" data-casemenuid="{{menuItem.caseMenuId}}" catchtap="toMore" wx:if="{{menuItem.haveFlag}}">
+            <view class="next-page" data-casemenuid="{{menuItem.caseMenuId}}"  catchtap="toMore" wx:if="{{menuItem.haveFlag}}">
                 <text>查看更多</text>
                 <image src="/static/images/next.png"></image>
             </view>
