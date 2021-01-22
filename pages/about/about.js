@@ -1,4 +1,5 @@
-var formatRichText = require('../../utils/formatRichText')
+const formatRichText = require('../../utils/formatRichText');
+const config = require('../../config/config.js');
 Page({
 
     /**
@@ -23,7 +24,7 @@ Page({
      */
     onLoad: function (options) {
         wx.request({
-            url: 'http://localhost:8080/design/front/mini/aboutInfo',
+            url: config.ctx + 'aboutInfo',
             success: (res) => {
                 let respData = res.data;
                 if (0 == respData.code) {

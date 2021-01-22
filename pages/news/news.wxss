@@ -1,55 +1,62 @@
-.container{
-    margin: 2rpx;
+.container {
+    margin: 2 rpx;
     background-color: #eaeaea;
     height: 100%;
 }
+
 /*类别标题*/
-.container .title{
-    height: 60rpx;
-    line-height: 60rpx;
-    font-size: 40rpx;
+.container .title {
+    height: 60 rpx;
+    line-height: 60 rpx;
+    font-size: 40 rpx;
     font-weight: bold;
     color: darkred;
-    margin-left: 10rpx;
+    margin-left: 10 rpx;
 }
+
 /*富文本案例大图*/
-.container .imageBig image{
+.container .imageBig image {
     width: 100%;
-    height: 360rpx;
-    border-radius: 16rpx;
+    height: 360 rpx;
+    border-radius: 16 rpx;
 }
+
 /*新闻列表*/
-.newsContainer{
-    padding: 20rpx;
-    margin: 10rpx 10rpx 0rpx 10rpx;
+.newsContainer {
+    padding: 20 rpx;
+    margin: 10 rpx 10 rpx 0 rpx 10 rpx;
     background-color: white;
-    border-radius: 16rpx;
+    border-radius: 16 rpx;
 }
-.newsContainer .news{
+
+.newsContainer .news {
     display: flex;
-    padding: 10rpx 4rpx;
+    padding: 10 rpx 4 rpx;
     width: 100%;
-    height: 50rpx;
-    line-height: 50rpx;
+    height: 50 rpx;
+    line-height: 50 rpx;
 }
-.newsContainer .news .newsTitle{
+
+.newsContainer .news .newsTitle {
     /*单行文本溢出三件套*/
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 530rpx;
+    width: 530 rpx;
 }
-.newsContainer .news .newsTime{
-    font-size: 24rpx;
+
+.newsContainer .news .newsTime {
+    font-size: 24 rpx;
     color: cornflowerblue;
     display: block;
     float: right;
 }
-.nothing{
-    height: 40rpx;
-    line-height: 40rpx;
+
+.nothing {
+    height: 40 rpx;
+    line-height: 40 rpx;
     color: gray;
     text-align: center;
-    font-size: 24rpx;
+    font-size: 24 rpx;
 }
 

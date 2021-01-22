@@ -1,4 +1,5 @@
-var dateUtils = require('../../utils/dateUtils')
+const dateUtils = require('../../utils/dateUtils');
+const config = require('../../config/config.js');
 Page({
 
     /**
@@ -28,7 +29,7 @@ Page({
      */
     onLoad: function (options) {
         wx.request({
-            url: 'http://localhost:8080/design/front/mini/noticePage/' + this.data.pageNum,
+            url: config.ctx + 'noticePage/' + this.data.pageNum,
             success: (res) => {
                 let respData = res.data;
                 if (0 == respData.code) {
@@ -103,7 +104,7 @@ Page({
             // 页数+1
             this.data.pageNum = this.data.pageNum + 1;
             wx.request({
-                url: 'http://localhost:8080/design/front/mini/noticePage/' + this.data.pageNum,
+                url: config.ctx + 'noticePage/' + this.data.pageNum,
                 success: (res) => {
                     let respData = res.data;
                     if (0 == respData.code) {

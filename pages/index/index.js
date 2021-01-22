@@ -1,4 +1,5 @@
-var dateUtils = require('../../utils/dateUtils')
+const dateUtils = require('../../utils/dateUtils');
+const config = require('../../config/config.js');
 Page({
 
     /**
@@ -55,7 +56,7 @@ Page({
      */
     onLoad: function (options) {
         wx.request({
-            url: 'http://localhost:8080/design/front/mini/initData',
+            url: config.ctx + 'initData',
             success: (res) => {
                 console.log(res);
                 let respData = res.data;

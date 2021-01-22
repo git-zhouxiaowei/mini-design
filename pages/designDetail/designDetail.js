@@ -1,4 +1,5 @@
-var formatRichText = require('../../utils/formatRichText')
+const formatRichText = require('../../utils/formatRichText');
+const config = require('../../config/config.js');
 Page({
 
     /**
@@ -12,7 +13,7 @@ Page({
     onLoad: function (options) {
         let caseId = options.caseId;
         wx.request({
-            url: 'http://localhost:8080/design/front/mini/caseText/' + caseId,
+            url: config.ctx + 'caseText/' + caseId,
             success: (res) => {
                 console.log(res);
                 let respData = res.data;

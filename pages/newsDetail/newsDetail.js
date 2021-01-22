@@ -1,11 +1,11 @@
-var formatRichText = require('../../utils/formatRichText')
+const formatRichText = require('../../utils/formatRichText');
+const config = require('../../config/config.js');
 Page({
 
     /**
      * 页面的初始数据
      */
-    data: {
-    },
+    data: {},
 
     /**
      * 生命周期函数--监听页面加载
@@ -13,7 +13,7 @@ Page({
     onLoad: function (options) {
         let noticeId = options.noticeId;
         wx.request({
-            url: 'http://localhost:8080/design/front/mini/noticeInfo/' + noticeId,
+            url: config.ctx + 'noticeInfo/' + noticeId,
             success: (res) => {
                 console.log(res);
                 let respData = res.data;

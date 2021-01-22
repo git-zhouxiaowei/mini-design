@@ -1,4 +1,4 @@
-// pages/newDesign/newDesign.js
+const config = require('../../config/config.js');
 Page({
 
     /**
@@ -37,7 +37,7 @@ Page({
             data = {caseMenuId: caseMenuId}
         }
         wx.request({
-            url: 'http://localhost:8080/design/front/mini/newCaseInfoPage/' + this.data.pageNum,
+            url: config.ctx + 'newCaseInfoPage/' + this.data.pageNum,
             data: data,
             success: (res) => {
                 let respData = res.data;
@@ -119,7 +119,7 @@ Page({
             // 页数+1
             this.data.pageNum = this.data.pageNum + 1;
             wx.request({
-                url: 'http://localhost:8080/design/front/mini/newCaseInfoPage/' + this.data.pageNum,
+                url: config.ctx + 'newCaseInfoPage/' + this.data.pageNum,
                 data: data,
                 success: (res) => {
                     let respData = res.data;

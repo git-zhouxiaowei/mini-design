@@ -35,7 +35,7 @@
         <scroll-view class="recommendScroll" enable-flex scroll-x>
             <view class="scrollItem" data-caseId="{{item.caseId}}" catchtap="toDesignDetail" wx:for="{{caseInfoList}}">
                 <image src="{{item.coverImg}}"></image>
-                <text>{{item.designName}}</text>
+                <text>{{item.caseName}}</text>
             </view>
         </scroll-view>
     </view>
